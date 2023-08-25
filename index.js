@@ -1,24 +1,18 @@
-// var http = require('http');
-// var fs = require('fs');
+var http = require('http');
+var fs = require('fs');
 
-// const PORT = 8080;
+const PORT = 8080;
 
-// fs.readFile('./index.html', function (err, html) {
+fs.readFile('./index.html', function (err, html) {
 
-//     if (err) throw err;
-
-//     http.createServer(function (request, response) {
-//         response.writeHeader(200, { "Content-Type": "text/html" });
-//         response.write(html);
-//         response.end();
-//     }).listen(PORT);
-// });
+    if (err) throw err;
+});
 
 
-var express = require('express');
-var app = express();
+// var express = require('express');
+// var app = express();
 
-app.use(express.static(__dirname + './index.html'));
+// app.use(express.static(__dirname + './index.html'));
 
-app.listen('3000');
-console.log('working on 3000');
+// app.listen('3000');
+// console.log('working on 3000');
